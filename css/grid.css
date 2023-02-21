@@ -13,16 +13,19 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  height: 100%;
 }
 body {
+  scroll-behavior: smooth;
   font-family: "Work Sans", sans-serif;
+  height: 100%;
 }
 
 .container {
   border: 5px outset rgb(219, 14, 14);
   display: grid;
-  grid-template-rows: 85px 23px 433px 74px;
+  grid-template-rows: 20% 5% 60% 15%;
+  grid-template-columns: auto auto auto auto;
   grid-template-areas:
     "header header header header header header"
     "nav nav nav nav nav nav"
@@ -30,12 +33,14 @@ body {
     "footer footer footer footer footer footer";
 
   background: yellow;
-  margin: 0;
+  margin: 5px;
+  height: 100%;
 }
 .container > div {
   text-align: center;
   font-size: 30px;
   border: 5px outset rgb(14, 15, 13);
+  gap: 5px;
 }
 .header {
   grid-area: header;
@@ -62,6 +67,7 @@ body {
   text-decoration: none;
   color: white;
   font-size: 15px;
+  font-weight: bolder;
 }
 
 .bbb {
@@ -93,10 +99,26 @@ body {
   grid-template-columns: 50% 50%;
 }
 .bbb2 > div {
-  margin: 5px;
   border: 5px outset black;
-  background-color: brown;
+  background-color: rgb(202, 212, 175);
+  padding: 5px;
+  word-wrap: break-word;
 }
+.bbb2 > div > span {
+  word-wrap: break-word;
+  font-size: large;
+  font-style: normal;
+  font-weight: bold;
+  color: rgb(14, 9, 9);
+}
+.bbb2 > div > p {
+  word-wrap: break-word;
+  font-size: large;
+  font-style: normal;
+  font-weight: bold;
+  color: rgb(14, 9, 9);
+}
+
 @media only screen and (max-width: 700px) {
   .bbb {
     grid-template-rows: 30% 70%;
