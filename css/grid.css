@@ -24,7 +24,7 @@ body {
 .container {
   border: 5px outset rgb(219, 14, 14);
   display: grid;
-  grid-template-rows: 20% 5% 60% 15%;
+  grid-template-rows: 15% 5% 60% 15%;
   grid-template-columns: auto auto auto auto;
   grid-template-areas:
     "header header header header header header"
